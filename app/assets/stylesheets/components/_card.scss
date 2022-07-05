@@ -1,0 +1,107 @@
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+// Smallest device
+@media (min-width: 100px) and (max-width: 575px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.card-category {
+  height: 220px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+
+  img {
+    width: 62px;
+    height: 62px;
+    min-width: 62px;
+    margin-right: 16px;
+    border-radius: 20px;
+  }
+}
+
+.card-content {
+  display: block;
+
+  h2 {
+    margin-bottom: 9px;
+    font-size: 24px;
+    line-height: 1.25em;
+  }
+
+  .contact-detail {
+    margin-bottom: 9px;
+  }
+
+  .opening-detail {
+    margin-bottom: 6px;
+
+    p {
+      margin-bottom: 0;
+
+      span {
+        color: $blue;
+        font-weight: 700;
+      }
+    }
+  }
+
+  a {
+
+    color: #625d7e;
+    font-size: 16px;
+    line-height: 1.625em;
+    text-decoration: none;
+  }
+
+  .link-book{
+    display: inline-block;
+    overflow: hidden;
+    color: #5d4fff;
+    font-size: 16px;
+    line-height: 1.5em;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+}
