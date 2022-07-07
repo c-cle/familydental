@@ -5,6 +5,10 @@
   grid-gap: 16px;
   margin-left: 50px;
   margin-right: 50px;
+  margin-top: -200px;
+  z-index: 1;
+  background-color: white;
+
 }
 
 // Smallest device
@@ -73,6 +77,16 @@
     margin-bottom: 9px;
   }
 
+  .servizi-detail {
+    margin-bottom: 4px;
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+
+
   .opening-detail {
     margin-bottom: 6px;
 
@@ -103,5 +117,12 @@
     font-weight: 700;
     text-decoration: none;
   }
+
+}
+
+@media (max-width: 1263px) {
+  .cards {
+    margin-top: 0px;
+    }
 
 }
