@@ -1,10 +1,26 @@
-.carousel {
-  padding-left: 10x;
-  padding-right: 10px;
+.header-container{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .card {
   border-radius: 10px;
+}
+
+.subtitle {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 12px 14px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #efeef6;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #5d4fff;
+  font-size: 16px;
+  line-height: 1.125em;
+  font-weight: 700;
 }
 
 .card-body{
